@@ -1,0 +1,25 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #EFD0CA;
+}
+
+nav {
+  background-color: #fff;
+  margin: 100px auto 0 auto;
+  width: 120px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+li {
+  list-style-type: none;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+}

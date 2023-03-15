@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hii</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+  </head>
+  <body>
+    <p>
+    <h1>WELCOME TO MY WORLD</h1>
+    </p>
+    <!-- input form -->
+    <form method="POST">
+      <input  name="text" >
+      <input type="submit" >
+    </form>
+      <nav>
+        <li><a href="{{url_for('img_get')}}"><h2>More_imgs</h2></a></li>
+        <li><a href="{{url_for('jas_get')}}"><h1>Jas_pics</h1> </a></li>
+      </nav>
+      <div>
+        <img src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg" alt="">
+        <img src="/static/images/jasmin3.jpg" alt="jas">
+      </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      nav {
+        margin-bottom: 15px;
+      }
+
+      li {
+        list-style-type: none;
+        margin-bottom: 3px;
+      }
+    </style>
+
+  </head>
+  <body>
+      <nav>
+        <li><a href="{{ url_for('hello')}}">Home</a></li>
+        <li><a href="{{ url_for('table_get')}}">Table Generator</a></li>
+        <a href="{{ url_for('wise')}}">Fun</a>
+      </nav>
+      <div class="result">
+        <ul>
+          {%for i in range(1,11)%}
+
+          <li>{{n}}x{{i}}={{n*i}}</li>
+
+          {%endfor%}
+        </ul>
+      </div>
+  </body>
+</html>
